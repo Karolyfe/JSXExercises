@@ -1,0 +1,59 @@
+/* Basic reset */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ffafbd, #ffc3a0);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Search container */
+.search-container {
+  position: relative;
+  width: 300px;
+}
+
+#fruit {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.suggestions {
+  position: absolute; /* Prevents it from affecting other layout elements */
+  top: 100%; /* Positions the dropdown just below the input */
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.suggestions ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  max-height: 200px; /* Sets a maximum height for the dropdown */
+  overflow-y: auto; /* Adds a scroll if the content exceeds max height */
+  display: none; /* Hides suggestions when there are no results */
+}
+
+.suggestions ul.has-suggestions {
+  display: block; /* Displays suggestions when results are present */
+}
+
+.suggestions ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions ul li:hover {
+  background: #f0f0f0;
+}
