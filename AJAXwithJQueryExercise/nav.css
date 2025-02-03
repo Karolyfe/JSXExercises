@@ -1,0 +1,58 @@
+/* Navigation bar */
+
+nav {
+    display: flex;
+    background-color: #1a1a2e; /* Dark navy blue */
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #e94560; /* Bright red for contrast */
+    text-transform: uppercase; /* Make the brand name stand out */
+  }
+  
+  .main-nav-links {
+    display: flex; /* Ensure links are spaced properly */
+    margin: 0 auto;
+    gap: 15px; /* Adjust spacing between links */
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    color: #ffffff; /* White for text contrast */
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #e94560; /* Highlight color */
+    color: #ffffff; /* Ensure text stays readable */
+  }
+  
+  .nav-right {
+    margin-left: auto;
+    color: #ffffff;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between right-side elements */
+  }
+  
+  .nav-right .icon {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff; /* White icons */
+    cursor: pointer;
+  }
+  
+  nav .navbar-brand:hover {
+    color: #f2a365; /* Subtle hover effect for the brand */
+  }
+  
